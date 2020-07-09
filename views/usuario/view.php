@@ -38,6 +38,8 @@ $this->params['breadcrumbs'][] = $usuario->nombreCompleto;
                     echo \dosamigos\leaflet\widgets\Map::widget(['leafLet' => $leaflet]);
                 ?>
             </div>
+        <?php } else { ?>
+            <p>Sin datos de ubicacion para este usuario</p>
         <?php } ?>
     </div>
 </div>
